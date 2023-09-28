@@ -1,19 +1,23 @@
+# key: ewoidXNlciIgOiAiUGVhcmxUaG91Z2h0c0ludGVybnNoaXAiLAoib3JnIiA6IDoiUGVhcmx0aG91Z2h0cy5jb20iCn0= # prevents unauthorized access
 models:
-  Post:
-    hasMany: [Comment]
+  Doctor:
+    hasMany: [Availability]
     fake:
-      _count: 10
-      cover: { imageURL: [1920, 1080] }
-      title: { loremWords: [5, 20] }
-      body: { loremParagraphs: [10, 100] }
-      category: { oneOfString: [one, two, three] }
-      isDraft: { bool: 20 }
-      views: { int: [0, 1000] }
-      createdAt: { dateTime: [2010-01-01T00:00:00Z, 2020-12-31T23:59:59Z] }
-  Comment:
-    belongsTo: [Post]
-    fake:
-      _count: 25
-      email: email
-      body: { loremParagraphs: [10, 100] }
-      createdAt: { dateTime: [2010-01-01T00:00:00Z, 2020-12-31T23:59:59Z] }
+      id: {int: [0, 12]}
+      _count: 20
+      name: { loremWords: [5,20]}
+      specialty: { loremWords: [5,50]}
+      description: { loremParagraphs: [5,100]}
+      gender: { loremWords: [0,6]}
+      createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
+      isAvailable: { bool: 20 }
+      
+  Availability:
+    belongsTo: [Doctor]
+      fake:
+       _count: 40
+        id: {int: [0, 12]}
+        days: []
+        timeslots: []
+        doctorId: {int: [0, 12]}
+        createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
