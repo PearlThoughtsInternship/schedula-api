@@ -15,7 +15,7 @@
                 "maxLength": 20
             }
         },
-        "specialty": {
+        "specialization": {
             "string": {
                 "minLength": 5,
                 "maxLength": 50
