@@ -16,7 +16,7 @@ Demo:
     # belongsTo: [Doctor]
       fake:
        _count: 40
-        id: id
+        _id: id
         #days: []
         #timeslots: []
         # doctorId: {int: [0, 12]}
