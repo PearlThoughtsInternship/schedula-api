@@ -9,7 +9,7 @@ models:
       specialty: { string: [5,50]}
       description: { string: [5,100]}
       gender: { string: [0,6]}
-      createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
+      createdAt: { dateTime: [2015-01-01T00:00:00Z, 2023-12-31T23:59:59Z] }
       isAvailable: { bool: 20 } 
 Availability:
     belongsTo: [Doctor]
@@ -18,4 +18,4 @@ Availability:
       id: { int: [0, 12]}
       days: { oneOfString: []}
       timeslots: { oneOfString: []}
-      createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
+      createdAt: { dateTime: [2015-01-01T00:00:00Z, 2023-12-31T23:59:59Z] }
