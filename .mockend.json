@@ -1,7 +1,7 @@
 {
     "Doctor": {
         "_": {
-            item: 20
+            items: 20
         },
         "id": {
             "int": {
@@ -48,7 +48,7 @@
     },
     "Demo": {
         "_": {
-            "item": 40
+            "items": 40
         },
         "id": {
             "int": {
