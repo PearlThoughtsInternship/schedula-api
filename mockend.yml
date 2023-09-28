@@ -12,12 +12,12 @@ models:
       createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
       isAvailable: { bool: 20 }
       
-  Demo:
+Demo:
     belongsTo: [Doctor]
       fake:
        _count: 40
         id: {int: [0, 12]}
-        # days: []
-        # timeslots: []
+        days: []
+        timeslots: []
         # doctorId: {int: [0, 12]}
         createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
