@@ -14,8 +14,8 @@ models:
 Availability:
     belongsTo: [Doctor]
     fake:
-      _count: 40
       id: { int: [0, 12]}
+      _count: 40
       days: []
       timeslots: []
       createdAt: { dateTime: [2015-01-01T00:00:00Z, 2023-12-31T23:59:59Z] }
