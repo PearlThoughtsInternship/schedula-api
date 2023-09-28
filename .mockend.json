@@ -42,11 +42,11 @@
                 "max": "2020-40-31T23:59:59Z"
             }
         },
-        "demos": {
-            "hasMany": "Demo"
+        "availability": {
+            "hasMany": "Availability"
         }
     },
-    "Demo": {
+    "Availability": {
         "_": {
             "items": 40
         },
