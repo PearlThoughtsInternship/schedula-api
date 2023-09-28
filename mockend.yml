@@ -13,7 +13,7 @@ models:
       isAvailable: { bool: 20 }
       
 Demo:
-    belongsTo: [Doctor]
+    # belongsTo: [Doctor]
       fake:
        _count: 40
         id: {int: [0, 12]}
