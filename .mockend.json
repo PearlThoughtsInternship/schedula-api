@@ -57,7 +57,7 @@
             }
         },
         "days": {
-            "oneOfString": []
+            "oneOfInt": []
         },
         "timeslots": {
             "oneOfString": []
