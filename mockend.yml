@@ -1,10 +1,10 @@
 # key: ewoidXNlciIgOiAiUGVhcmxUaG91Z2h0c0ludGVybnNoaXAiLAoib3JnIiA6IDoiUGVhcmx0aG91Z2h0cy5jb20iCn0= # prevents unauthorized access
 models:
   Doctor:
-    # hasMany: [Availability]
+    hasMany: [Availability]
     fake:
       id: {int: [0, 12]}
-      #_count: 20
+      _count: 20
       name: { string: [5,20]}
       specialty: { string: [5,50]}
       description: { string: [5,100]}
@@ -12,12 +12,12 @@ models:
       createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
       isAvailable: { bool: 20 }
       
-  # Availability:
-  #   belongsTo: [Doctor]
-  #     fake:
-  #      _count: 40
-  #       id: {int: [0, 12]}
-  #       days: []
-  #       timeslots: []
-  #       doctorId: {int: [0, 12]}
-  #       createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
+  Availability:
+    belongsTo: [Doctor]
+      fake:
+       _count: 40
+        id: {int: [0, 12]}
+        days: []
+        timeslots: []
+        # doctorId: {int: [0, 12]}
+        createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
