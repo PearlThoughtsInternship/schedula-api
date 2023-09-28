@@ -6,7 +6,7 @@ models:
       id: { int: [0, 12]}
       _count: 20
       name: { string: [5,20]}
-      specialty: { string: [5,50]}
+      specialization: { string: [5,50]}
       description: { string: [5,100]}
       gender: { string: [0,6]}
       createdAt: { dateTime: [2015-01-01T00:00:00Z, 2023-12-31T23:59:59Z] }
