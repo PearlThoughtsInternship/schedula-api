@@ -42,7 +42,7 @@
                 "max": "2020-40-31T23:59:59Z"
             }
         },
-        "availability": {
+        "availabilities": {
             "hasMany": "Availability"
         }
     },
