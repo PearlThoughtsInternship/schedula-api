@@ -4,7 +4,7 @@ models:
     # hasMany: [Availability]
     fake:
       id: {int: [0, 12]}
-      _count: 20
+      #_count: 20
       name: { loremWords: [5,20]}
       specialty: { loremWords: [5,50]}
       description: { loremParagraphs: [5,100]}
