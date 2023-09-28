@@ -52,12 +52,6 @@
                 "max": 12
             }
         },
-        "doctorId": {
-            "int": {
-                "min": 0,
-                "max": 12
-            }
-        },
         "days": {
             "string": []
         },
